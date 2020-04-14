@@ -3,7 +3,7 @@
 node('rhel7'){
 	stage('Checkout repo') {
 		deleteDir()
-		git url: 'https://github.com/redhat-developer/intellij-common',
+		git url: 'https://github.com/jeffmaury/intellij-common',
 			branch: "${sha1}"
 	}
 
